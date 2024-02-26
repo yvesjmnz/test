@@ -19,7 +19,7 @@ public class GameLobbyScreen {
             System.out.println("Job Class: " + player.getJobClass());
             System.out.println("Level: " + player.getLevel());
             System.out.println("Runes: " + player.getRunes());
-            System.out.println("System Messages: " + player.getSystemMessages());
+            System.out.println("System Messages: ");
             System.out.println("HP: " + player.getHP());
             System.out.println("Endurance: " + player.getEndurance());
             System.out.println("Dexterity: " + player.getDexterity());
