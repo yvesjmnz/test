@@ -132,7 +132,7 @@ public class Player {
         level++;
     }
 
-    public boolean isClearedArea1 {
+    public boolean isClearedArea1() {
         return clearedArea1;
     }
 }
