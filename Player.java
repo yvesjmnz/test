@@ -3,7 +3,6 @@ public class Player {
     private String jobClass;
     private int level;
     private int runes;
-    private String systemMessages;
     private int hp;
     private int endurance;
     private int dexterity;
@@ -11,12 +10,15 @@ public class Player {
     private int intelligence;
     private int faith;
 
+    //area markers
+    private boolean clearedArea1;
+
     public Player(String name, String jobClass) {
         this.name = name;
         this.jobClass = jobClass;
-        this.level = 1; // Initial level
+        this.level = 1;
         this.runes = 0;
-        this.systemMessages = "";
+        this.clearedArea1 = false;
 
         // Initialize additional stats based on job class
         switch (jobClass) {
@@ -125,15 +127,12 @@ public class Player {
         this.runes = runes;
     }
 
-    public String getSystemMessages() {
-        return systemMessages;
-    }
-
-    public void setSystemMessages(String systemMessages) {
-        this.systemMessages = systemMessages;
-    }
 
     public void levelUp() {
         level++;
+    }
+
+    public boolean isClearedArea1 {
+        return clearedArea1;
     }
 }
