@@ -81,42 +81,60 @@ public class Player {
         }
     }
 
-    // Getters for additional stats
     public int getHP() {
         return hp;
+    }
+
+    public void setHP(int hp) {
+        this.hp = hp;
     }
 
     public int getEndurance() {
         return endurance;
     }
 
+    public void setEndurance(int endurance) {
+        this.endurance = endurance;
+    }
+
     public int getDexterity() {
         return dexterity;
+    }
+
+    public void setDexterity(int dexterity) {
+        this.dexterity = dexterity;
     }
 
     public int getStrength() {
         return strength;
     }
 
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
     public int getIntelligence() {
         return intelligence;
+    }
+
+    public void setIntelligence(int intelligence) {
+        this.intelligence = intelligence;
     }
 
     public int getFaith() {
         return faith;
     }
 
-    // Getters and setters for other attributes
-    public String getName() {
-        return name;
-    }
-
-    public String getJobClass() {
-        return jobClass;
+    public void setFaith(int faith) {
+        this.faith = faith;
     }
 
     public int getLevel() {
         return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public int getRunes() {
@@ -127,11 +145,13 @@ public class Player {
         this.runes = runes;
     }
 
-
-    public void levelUp() {
-        level++;
+    public String getName() {
+        return name;
     }
 
+    public String getJobClass() {
+        return jobClass;
+    }
     public boolean isClearedArea1() {
         return clearedArea1;
     }
