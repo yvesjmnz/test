@@ -1,0 +1,15 @@
+public class FastTravelTile extends Tile {
+    private final int areaIndex;
+
+    public FastTravelTile(int x, int y, int areaIndex) {
+        super(x, y);
+        this.areaIndex = areaIndex;
+    }
+
+    @Override
+    public void interact(Player player) {
+        player.setCurrentArea(Area.getAreaByIndex(areaIndex));
+        player.setCurrentFloor(0);
+        player.setCurrentTile(player.getCurrentArea().getFloors().get(player.getCurrentFloor()).getTile(1, 1));
+    }
+}
