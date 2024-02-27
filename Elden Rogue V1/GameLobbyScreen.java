@@ -34,7 +34,8 @@ public class GameLobbyScreen {
                     fastTravel();
                     break;
                 case 2:
-                    player.levelUp();
+                    LevelUpScreen levelUpScreen = new LevelUpScreen(player);
+                    levelUpScreen.display();
                     break;
                 case 3:
                     viewInventory();
